@@ -40,5 +40,5 @@
 
 You do this because the first image is large. We need it to build the go programme, but we do not need it later. Then we use the small alpine image.
 
-`docker images` - shows docker images
-`eval $(minikube docker-env)` - switches the Docker context to the docker that is build in minikube
+- `docker images` - shows docker images
+- `eval $(minikube docker-env)` - switches the Docker context to the docker that is build in minikube
