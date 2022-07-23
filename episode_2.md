@@ -32,11 +32,11 @@
 `RUN go build cmd/hello/hello.go`  
 
 
-`FROM alpine:latest`
-`WORKDIR /app`
-`COPY --from=build /app/hello /app/hello`
-`EXPOSE 8180`
-`ENTRYPOINT ["./hello"]`
+`FROM alpine:latest`  
+`WORKDIR /app`  
+`COPY --from=build /app/hello /app/hello`  
+`EXPOSE 8180`  
+`ENTRYPOINT ["./hello"]`  
 
 You do this because the first image is large. We need it to build the go programme, but we do not need it later. Then we use the small alpine image.
 
