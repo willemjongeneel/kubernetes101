@@ -25,7 +25,7 @@
 - `docker build -t geerlingguy/kube-101:intro .` - build an image based on Dockerfile
 - `docker run -rm -p 80:80 geerlingguy/kube-101:intro` - run the image 
  
-### Multistage build example:
+### Multistage Dockerfile example:
 `FROM golang:1-alpine as build`  
 `WORKDIR /app`  
 `COPY cmd cmd`  
