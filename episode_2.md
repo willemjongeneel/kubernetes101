@@ -26,10 +26,10 @@
 - `docker run -rm -p 80:80 geerlingguy/kube-101:intro` - run the image 
  
 ### Multistage build example:
-`FROM golang:1-alpine as build`
-`WORKDIR /app`
-`COPY cmd cmd`
-`RUN go build cmd/hello/hello.go`
+`FROM golang:1-alpine as build`  
+`WORKDIR /app`  
+`COPY cmd cmd`  
+`RUN go build cmd/hello/hello.go`  
 
 
 `FROM alpine:latest`
