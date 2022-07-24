@@ -23,3 +23,10 @@
 
 ### show logs
 - `kubectl logs -f -l app=hello-go --prefix=true` - like tail -f for the logs, --prefix=true shows the pod that is logging the requests
+
+### get yaml output of service 
+- `kubectl get svc hello-go -o yaml`
+
+### upgrade container image in kubernetes deployment
+- `kubectl edit deployment hello-go` - edit the container tag
+- `kubectl set image deployment/hello-go kube101-go=willemjongeneel91/kube101-go:1.1.0` - or edit container tag like this
