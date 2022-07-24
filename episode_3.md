@@ -30,3 +30,6 @@
 ### upgrade container image in kubernetes deployment
 - `kubectl edit deployment hello-go` - edit the container tag
 - `kubectl set image deployment/hello-go kube101-go=willemjongeneel91/kube101-go:1.1.0` - or edit container tag like this
+
+### rollback deployment
+`kubectl rollout history deployment hello-go` - show deployment history
